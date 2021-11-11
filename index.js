@@ -67,15 +67,15 @@
 
   /** this function takes away the last added pokemon */
   function subtract() {
-    if (id("photos").lastChild !== null) {
-      id("photos").removeChild(id("photos").lastChild);
+    if (id("photos").firstChild !== null) {
+      id("photos").removeChild(id("photos").firstChild);
     }
   }
 
   /** this function changes the last added pokemon to a different one */
   function different() {
-    if (id("photos").lastChild !== null) {
-      id("photos").removeChild(id("photos").lastChild);
+    if (id("photos").firstChild !== null) {
+      id("photos").removeChild(id("photos").firstChild);
     }
     add();
   }
