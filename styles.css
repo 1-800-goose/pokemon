@@ -1,0 +1,119 @@
+/*
+  Name: Robin Luo
+  Date: November 5, 2021
+  Section: CSE 154 AB
+  This is the styles.css main stylesheet for my pokemon generator website. It contains the
+  formatting for most of the page in a cute theme. It includes adding the background images, the
+  styling for the buttons (for both day and night versions), etc.
+*/
+
+/*
+background image source:
+https://www.teahub.io/viewwp/xmoobT_background-gingham-check-and-girly-image-empire-state/
+*/
+#body {
+  background-image: url("img/background.jpg");
+}
+
+#body.nightbkgd {
+  background-image: url("img/background2.png");
+}
+
+#header {
+  font-family: 'Shrikhand', cursive;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+  text-shadow: -2px 0 #a84767, 0 2px #a84767, 2px 0 #a84767, 0 -2px #a84767;
+}
+
+#header.nighttxt {
+  text-shadow: -2px 0 #004155, 0 2px #004155, 2px 0 #004155, 0 -2px #004155;
+}
+
+#header h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 30px;
+  color: #db8ca5;
+  text-align: right;
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+img {
+  height: 200px;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+/*
+  day & night image source:
+  https://patternvomit.tumblr.com/post/72151250450/dimespin-i-made-another-seamless-repeating-tile
+*/
+#photos {
+  background-image: url("img/day.png");
+  background-size: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#photos.night {
+  background-image: url("img/night.png");
+}
+
+button {
+  font-family: 'Schoolbell', cursive;
+  color: #6a6a90;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #fff1eb;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #db8ca5;
+}
+
+button.nightbtn {
+  background-color: #c7ffee;
+  box-shadow: 0 9px #37aea8;
+}
+
+button:hover {
+  background-color: #f0c6d3;
+}
+
+button:hover.nightbtnhvr {
+  background-color: #a3e9d4;
+}
+
+button:active {
+  background-color: #fff1eb;
+  box-shadow: 0 5px #db8ca5;
+  transform: translateY(4px);
+}
+
+button:active.nightbtnact {
+  background-color: #c7ffee;
+  box-shadow: 0 5px #37aea8;
+}
+
+p {
+  font-family: 'Shrikhand', cursive;
+}
