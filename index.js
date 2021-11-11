@@ -59,7 +59,10 @@
     let pokemon = document.createElement("img");
     pokemon.src = response.sprites.front_default;
     pokemon.alt = response.name;
-    id("photos").appendChild(pokemon);
+    if(id("photos").childNodes.length==0) {
+      id("photos").appendChild(pokemon);
+    }
+    id("photos").insertBefore(pokemon, id("photos").firstChild);
   }
 
   /** this function takes away the last added pokemon */
